@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input,
+select,
+option {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99;
+  object-fit: cover;
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: -100;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  gap: 70px;
+  font-size: 1.1rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 30px;
+  background-color: #397cb1;
+  color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+ul {
+  display: flex;
+}
+
+ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+nav label {
+  margin-right: 40px;
+  font-size: 1.5rem;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#helpIcon,
+#helpIcon2,
+#searchIcon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#searchIcon {
+  color: #397cb1;
+  position: absolute;
+  left: 10px;
+}
+
+#helpIcon2 {
+  position: absolute;
+  display: none;
+  right: 10px;
+  color: #397cb1;
+}
+
+[type="search"] {
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.toolsSection {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  background-color: white;
+  color: #397cb1;
+  padding: 10px 35px;
+  border-radius: 35px;
+}
+
+.toolsSection div {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  gap: 10px;
+}
+#go {
+  position: absolute;
+  top: 120%;
+  background-color: #397cb1;
+  color: white;
+  padding: 5px 70px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+.general-form {
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#codePatient,
+#time,
+#medecin,
+#datePatient {
+  width: 130px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  form {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  #helpIcon {
+    display: none;
+  }
+  label {
+    margin-right: 0;
+  }
+  #helpIcon2 {
+    display: inline;
+  }
+  .toolsSection {
+    flex-direction: column;
+    bottom: 0;
+    gap: 0px;
+    justify-content: flex-end;
+    padding: 10px 30px;
+    box-shadow: 2px 0 30px rgba(100, 100, 100, 0.2);
+  }
+  .toolsSection div {
+    justify-content: flex-start;
+  }
+  #go {
+    top: 105%;
+  }
+}

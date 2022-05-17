@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="./media/background.mp4" type="video/mp4">
+    </video>
+    <div class="content"></div>
+    <nav>
+      <form>
+        <label for="logo"><a href="./index.html">Logo</a></label>
+        <div class="search">
+          <input type="search" name="searchBar" id="searchBar" />
+          <i class="bx bx-help-circle" id="helpIcon2"></i>
+          <i class="bx bx-search" id="searchIcon"></i>
+        </div>
+        <i class="bx bx-help-circle" id="helpIcon"></i>
+      </form>
+      <ul>
+        <li><a href="#">RDV</a></li>
+        <li><a href="#">Medcin</a></li>
+        <li><a href="#">Registre</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <form class="toolsSection">
+      <input type="submit" value="Go" id="go">
+      <div>
+        <label for="medecin">
+          <i class='bx bx-user' ></i>
+        </label>
+        <select name="medecin" id="medecin" class="general-form">
+          <option value="none" hidden selected>Medcin</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div>
+        <label for="codePatient">
+          <i class='bx bx-id-card' ></i>
+        </label>
+        <input type="number" name="codePatient" id="codePatient" class="general-form" placeholder="code">
+      </div>
+      
+      <div>
+        <label for="datePatient">
+          <i class='bx bx-calendar'></i>
+        </label>
+        <input type="date" name="datePatient" id="datePatient" class="general-form" placeholder="Date">
+      </div>
+      <div>
+        <label for="time">
+          <i class='bx bx-time' ></i>
+        </label>
+        <select name="time" id="time" class="general-form" >
+          <option value="none" hidden selected>Time</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+    </section>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
